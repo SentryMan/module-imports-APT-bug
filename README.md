@@ -10,12 +10,15 @@ OpenJDK 64-Bit Server VM (build 23-ea+23-1895, mixed mode, sharing)
 ```
 
 ## Expected result:
-I should be able to compile my application 
+I should be able to compile my application.
 
 ## Actual Result:
 Compilation fails for this message.
 ```
-An exception has occurred in the compiler (23-ea). Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates. Include your program, the following diagnostic, and the parameters passed to the Java compiler in your report. Thank you.
+An exception has occurred in the compiler (23-ea).
+Please file a bug against the Java compiler via the Java bug reporting page (https://bugreport.java.com) after checking the Bug Database (https://bugs.java.com) for duplicates.
+Include your program, the following diagnostic, and the parameters passed to the Java compiler in your report.
+Thank you.
 java.lang.AssertionError
         at jdk.compiler/com.sun.tools.javac.util.Assert.error(Assert.java:155)
         at jdk.compiler/com.sun.tools.javac.tree.TreeScanner.visitTree(TreeScanner.java:415)
@@ -43,4 +46,4 @@ java.lang.AssertionError
 
 ## How to reproduce:
 1. Clone this repo
-2. Run `mvn clean compile` to see the error
+2. Run `mvn clean compile` to see that the blackbox test module fails to compile
